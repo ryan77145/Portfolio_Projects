@@ -1,0 +1,15 @@
+[submodule "BuisnessSamples"]
+	path = BuisnessSamples
+	url = https://github.com/ryan77145/PeakProSample
+[submodule "MultipageSample"]
+	path = MultipageSample
+	url = https://github.com/ryan77145/FullBuildConstructionSample
+[submodule "Calculator"]
+	path = Calculator
+	url = https://github.com/ryan77145/Calculator-Project
+[submodule "BusinessWebsite"]
+	path = BusinessWebsite
+	url = https://github.com/ryan77145/RyanShillCo
+[submodule "PersonalWebsite"]
+	path = PersonalWebsite
+	url = https://github.com/ryan77145/PortfolioWebsite
