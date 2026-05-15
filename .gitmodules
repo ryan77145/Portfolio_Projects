@@ -1,6 +1,3 @@
-[submodule "BuisnessSamples"]
-	path = BuisnessSamples
-	url = https://github.com/ryan77145/PeakProSample
 [submodule "MultipageSample"]
 	path = MultipageSample
 	url = https://github.com/ryan77145/FullBuildConstructionSample
@@ -13,3 +10,6 @@
 [submodule "PersonalWebsite"]
 	path = PersonalWebsite
 	url = https://github.com/ryan77145/PortfolioWebsite
+[submodule "LandingPageSample"]
+	path = LandingPageSample
+	url = https://github.com/ryan77145/PeakProSample
