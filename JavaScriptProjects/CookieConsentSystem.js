@@ -60,3 +60,45 @@ function checkCookie() {
         loadGA(false);
     }
 }
+
+window.onload = function() {
+    checkCookie();
+    const acceptbtn = document.querySelector("#accept");
+    const banner = document.querySelector(".cookieBanner");
+    acceptbtn.onclick = function() {
+        document.cookie = "cookieConsent=yes; max-age=31536000; path=/";
+        banner.style.display = "none";
+        loadGA(true);
+    }
+    const declinebtn = document.querySelector("#decline");
+    declinebtn.onclick = function() {
+        document.cookie = "cookieConsent=no; max-age=31536000; path=/";
+        banner.style.display = "none";
+        loadGA(false);
+    }
+    const preferences = document.querySelector(".cookiePreferences");
+    const prefbtn = document.querySelector("#preferences");
+    prefbtn.onclick = function() {
+        preferences.style.display = "block";
+    }
+    const closebtn = document.querySelector("#close");
+    closebtn.onclick = function() {
+        preferences.style.display = "none";
+    }
+    const savebtn = document.querySelector("#save");
+    const analyticsCheckbox = document.querySelector(".analytics");
+    savebtn.onclick = function() {
+        if (analyticsCheckbox.checked) {
+            document.cookie = "cookieConsent=yes; max-age=31536000; path=/";
+            loadGA(true);
+        } else {
+            document.cookie = "cookieConsent=no; max-age=31536000; path=/";
+            loadGA(false);
+        }
+        preferences.style.display = "none";
+    }
+    const consentPreferences = document.querySelector("#consentPreferences");
+    consentPreferences.onclick = function() {
+        preferences.style.display = "block";
+    }
+}
